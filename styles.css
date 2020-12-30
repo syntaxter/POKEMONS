@@ -11,6 +11,12 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.contenedor {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
 .contenedor-nombre-hr {
   position: absolute;
   bottom: 0px;
