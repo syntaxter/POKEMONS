@@ -14,7 +14,7 @@ body {
 .contenedor {
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .contenedor-nombre-hr {
@@ -280,6 +280,11 @@ div#clicMenu {
     position: absolute;
     top: 10px;
     right: 10px;
+    cursor: pointer;
+  }
+
+  #clicMenu {
+    background-color: red;
     cursor: pointer;
   }
 
