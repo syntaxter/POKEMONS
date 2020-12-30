@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor-nombre-hr {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.contenedor-nombre-vr h1 {
+  font-size: 170px;
+  writing-mode: vertical-lr;
+  position: absolute;
+  bottom: 40px;
+  left: -60px;
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.contenedor-nombre-hr h1 {
+  border-top: solid 2px black;
+  font-size: 170px;
+  position: absolute;
+  bottom: -50px;
+  left: 170px;
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  width: 1200px;
+}
+
+.contenedor-contenido-interno {
+  position: absolute;
+  width: 90%;
+  height: 75%;
+  right: 0px;
+  display: flex;
+}
+
+.columna-izquierda {
+  width: 30%;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.columna-izquierda .encabezados h2 {
+  color: black;
+  font-size: 40px;
+  border-bottom: 1px solid black;
+  width: 180px;
+  font-weight: 400;
+}
+
+.columna-izquierda .encabezados p {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 30px;
+  font-weight: 200;
+}
+
+.columna-derecha {
+  width: 70%;
+  padding-left: 140px;
+  padding-top: 20px;
+}
+
+.contenedor-imagen-txt {
+  width: 70%;
+  height: 50%;
+}
+
+.contenedor-imagen-txt img {
+  background-color: white;
+  width: 100%;
+  height: 80%;
+  border: solid 0.5px black;
+  padding: 8px;
+}
+
+.contenedor-imagen-txt p {
+  color: black;
+  font-size: 18px;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.columna-derecha h2 {
+  font-size: 80px;
+  text-align: justify;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.columna-derecha p {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+  margin-right: 20px;
+  width: 70%;
+}
+
+.contenedor-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.contenedor-icon img {
+  width: 70%;
+  cursor: pointer;
+}
+
+.busqueda input {
+  right: 0px;
+  width: 700px;
+  cursor: pointer;
+  background-color: transparent;
+  height: 200px;
+  font-size: 150px;
+  color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  border: none;
+}
+
+input::placeholder {
+  border: none;
+}
+
+input:active {
+  border: none;
+}
+
+/*codigos de interactividad*/
+
+.busqueda[data-test="ocultar"] {
+  position: absolute;
+  right: 0px;
+  width: 0%;
+  cursor: pointer;
+  height: 0%;
+  display: none;
+  animation: ocultar 2s ease;
+}
+
+.busqueda[data-test="mostrar"] {
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  cursor: pointer;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#clicMenu {
+  padding: 20px;
+  cursor: pointer;
+}

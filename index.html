@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Poke Api- App</title>
+  </head>
+  <body>
+    <div class="contenedor-nombre-vr">
+      <h1 id="titulo-vr"></h1>
+    </div>
+
+    <div class="contenedor-nombre-hr">
+      <h1>JOSE AMAYA</h1>
+    </div>
+
+    <!--Aqui se coloca el contenido interno-->
+
+    <div class="contenedor-contenido-interno">
+      <div class="contenedor-icon">
+        <div id="clicMenu">
+          <i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36.621"
+              height="36.621"
+              viewBox="0 0 56.621 56.621"
+            >
+              <g
+                id="Icon_feather-search"
+                data-name="Icon feather-search"
+                transform="translate(1.5 1.5)"
+              >
+                <path
+                  id="Trazado_3"
+                  data-name="Trazado 3"
+                  d="M51.611,28.056A23.556,23.556,0,1,1,28.056,4.5,23.556,23.556,0,0,1,51.611,28.056Z"
+                  transform="translate(-4.5 -4.5)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                />
+                <path
+                  id="Trazado_4"
+                  data-name="Trazado 4"
+                  d="M37.783,37.783,24.975,24.975"
+                  transform="translate(15.217 15.217)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                />
+              </g>
+            </svg>
+          </i>
+        </div>
+      </div>
+      <div class="columna-izquierda">
+        <div class="encabezados">
+          <h2>POKEAPI</h2>
+          <p>Encuentra el pokemon</p>
+        </div>
+        <div class="contenedor-imagen-txt">
+          <img id="miniatura" src="" alt="" />
+          <p id="move">Type: <span>Lorem ipsum dolor</span></p>
+        </div>
+      </div>
+
+      <div class="columna-derecha">
+        <h2 id="namePokemon"></h2>
+        <p>
+          Este es un sitio diseñado por Jose Antonio Amaya, usando estandadares
+          de las web que permitan la utilización de funcionalidades de ES6 bajo
+          las nuevas caracteristicas de Javascript para comunicación asincrona a
+          través de un servidor, adicional a esto la aplicación se anima con una
+          librería de animación conocida como GSAP de GreenSock y hace un
+          reconocimiento de los textos agregados al input recorre un Array de
+          nombres de pokemon y devuelve la coincidencia almacenada en un objeto
+          con sus poderes e imagen asociada.
+        </p>
+      </div>
+    </div>
+
+    <!--Estilos emergentes-->
+
+    <div class="busqueda" data-test="ocultar">
+      <div class="contenedor-icon" id="salir">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="56.621"
+          height="56.621"
+          viewBox="0 0 56.621 56.621"
+        >
+          <g
+            id="Icon_feather-search"
+            data-name="Icon feather-search"
+            transform="translate(1.5 1.5)"
+          >
+            <path
+              id="Trazado_4"
+              data-name="Trazado 4"
+              d="M37.783,37.783,24.975,24.975"
+              transform="translate(15.217 15.217)"
+              fill="none"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+            />
+          </g>
+        </svg>
+      </div>
+      <input id="keyP" type="text" value="" placeholder="Buscar..." />
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
